@@ -59,14 +59,15 @@ Follow these steps to get the application running on your local machine:
        python app.py
 
 # Technical Details & Architecture
-1. Technology Stack
+1.Technology Stack
+
 This lists the core tools and languages used to build the application:
 
 Backend Language: Python 3.x
 
 Web Framework: Flask (lightweight and minimal web application framework)
 
-[Project Root Folder]
+  [Project Root Folder]
 
   ├── .gitignore
 
