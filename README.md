@@ -1,7 +1,11 @@
 # OptiStock
+
 OptiStock: A simple web app for managing product stock and sales records using flask and python.
+
 # Project theme
+
 The primary goal of your application is to ensure accurate and accessible inventory control by allowing quick management of product data. The core functionality centers around Product Maintenance, where you can update permanent details like the product Name and Price, and Stock Adjustments, which let you fix inventory counts for reasons other than sales, such as damage or counting errors. Technologically, the system operates on the standard CRUD (Create, Read, Update, Delete) pattern. When a user clicks "Edit," the system safely Reads (GET) the existing data. When they click "Save," it executes an Update (POST) operation, changing the details in the database. This clear separation of reading and writing data is a fundamental programming concept that helps keep your inventory records consistent and reliable.
+
 # Features
 1.Product Listing & Viewing:
 
@@ -63,28 +67,48 @@ Backend Language: Python 3.x
 Web Framework: Flask (lightweight and minimal web application framework)
 
 [Project Root Folder]
+
 ├── .gitignore
+
 ├── app.py
+
 ├── database.db
+
 ├── inventory_data.json
+
 ├── inventory_manager.py
+
 ├── Procfile
+
 ├── requirements.txt
+
 ├── transactions_data.json
+
 ├── users_data.json
+
 ├── static/
+
 │   └── style.css
+
 └── templates/
+
     ├── add.html
+    
     ├── base.html
+    
     ├── best_sellers.html
+    
     ├── index.html
+    
     ├── login.html
+    
     ├── sell.html
+    
     ├── signup.html
+    
     └── update.html
 
-#screenshots
+# Screenshots
 <img width="1600" height="864" alt="image" src="https://github.com/user-attachments/assets/91caed30-7468-42d4-95dd-c256fc6ff081" />
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/e69ee6fb-566a-42da-b042-4c27b5961613" />
 ![WhatsApp Image 2025-12-12 at 1 35 40 AM](https://github.com/user-attachments/assets/b947701b-37a6-46bb-973f-0f6d50fedb9c)
