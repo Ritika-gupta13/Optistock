@@ -24,9 +24,11 @@ The edit forms are pre-filled with the current data, improving the user experien
 Users can quickly and directly update the on-hand Stock Quantity.
 This is crucial for performing Stock Adjustments to account for non-sale changes, such as damaged goods, losses, or correcting counting errors. (The editing and stock changes are handled by the Update operation of the CRUD pattern).
 
-4. Planned Feature: Secure Password Recovery
+4.Planned Feature: Secure Password Recovery
 Future Development: The application currently lacks a "Forgot Password" mechanism. A critical future feature will be the implementation of a secure password recovery system. This will involve generating a unique, time-sensitive token and sending it to the user's registered email, allowing them to safely reset their password without intervention from an administrator. This is essential for user accessibility and security best practices.
-# installation and setup
+
+# Installation and setup
+
 Prerequisites
 Ensure the user has these core tools installed on their system before proceeding:
 
@@ -115,6 +117,9 @@ Web Framework: Flask (lightweight and minimal web application framework)
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/896e7339-a748-4ea5-9520-b85d5bdfba2d"/>
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/2efd82fb-6460-4a6d-9218-590abc65245a"/>
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/9d12d477-0502-449b-9a73-1cb6b37b48f8"/>
+
+# Author
+Ritika Gupta
 
 
 
