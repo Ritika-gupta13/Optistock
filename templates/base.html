@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiStock - Inventory</title>
+    
+    <link rel="icon" href="{{ url_for('static', filename='favicon-16x16.png') }}" type="image/png">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="{{ url_for('index') }}" class="logo-link">
+                    <span class="app-title">OptiStock</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="active">🏠 Dashboard</a></li>
+                    <li><a href="{{ url_for('add_product_route') }}">➕ Add Product</a></li>
+                    <li><a href="{{ url_for('record_sale_route') }}">💸 Record Sale</a></li>
+                    <li><a href="{{ url_for('best_sellers_route') }}">📈 Sales Report</a></li>
+                    
+                    {% if current_user.is_authenticated %}
+                        <li><a href="{{ url_for('logout_route') }}">⬅️ Log Out ({{ current_user.username }})</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-area">
+            <div class="header">
+                <h1>{% block header_title %}Dashboard{% endblock %}</h1>
+            </div>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </div>
+</body>
+</html>

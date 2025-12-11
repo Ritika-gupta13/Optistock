@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block header_title %}Best Sellers Report{% endblock %}
+{% block content %}
+    <div class="report-container">
+        <h3>Top 5 Selling Products (By Quantity Sold)</h3>
+        
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Total Sold</th>
+                    <th>Total Revenue (Rs)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in best_sellers %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ item.item_code }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.total_quantity_sold }}</td>
+                    <td>Rs{{ item.total_revenue | round(2) }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="5">No sales data found to generate report. Sell some products first!</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <p class="report-note">Data reflects all transactions recorded in the system.</p>
+    </div>
+{% endblock %}

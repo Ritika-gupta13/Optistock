@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block header_title %}Dashboard{% endblock %}
+
+{% block content %}
+    
+    <div class="summary-cards">
+        <div class="card">
+            <h3>Total Inventory Value</h3>
+            <p class="card-value card-total-value">Rs{{ total_value | round(2) }}</p>
+        </div>
+        <div class="card">
+            <h3>Low Stock Items (&le; 10)</h3>
+            <p class="card-value card-low-stock">{{ low_stock_count }}</p>
+        </div>
+        <div class="card">
+            <h3>Total Products Tracked</h3>
+            <p class="card-value card-total-products">{{ products | length }}</p>
+        </div>
+    </div>
+
+    <form method="GET" action="{{ url_for('index') }}" class="search-form">
+        <input type="text" 
+               name="q" 
+               placeholder="Search by Code or Name..." 
+               value="{{ search_query or '' }}" 
+               class="search-input">
+        <button type="submit" class="btn btn-search">🔍 Search</button>
+        {% if search_query %}
+            <a href="{{ url_for('index') }}" class="btn btn-secondary btn-clear-search">Clear Search</a>
+        {% endif %}
+    </form>
+
+    <h2>Inventory List</h2>
+    
+    <table class="inventory-table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Price (Rs)</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr class="{% if product.stock <= 10 %}low-stock-row{% endif %}">
+                <td>{{ product.item_code }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price | round(2) }}</td>
+                <td>
+                    {{ product.stock }} 
+                    {% if product.stock <= 10 %} 
+                        <span class="alert alert-danger" style="padding: 2px 5px; font-size: 0.7rem; display: inline-block;">(LOW)</span>
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="{{ url_for('update_product_route', item_code=product.item_code) }}" class="btn btn-edit">Edit/Adjust</a>
+                    <a href="{{ url_for('delete_product_route', item_code=product.item_code) }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete {{ product.name }}? This cannot be undone.');">Delete</a>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="5">Your inventory is empty. Start by adding a product!</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

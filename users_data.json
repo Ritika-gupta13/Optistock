@@ -1,0 +1,9 @@
+[
+    {
+        "id": "1",
+        "username": "Ritika@12019",
+        "password_hash": "scrypt:32768:8:1$fn6cw7QJNKVbBBjE$3be951dfddacad8be858e9e1556272c0255bfd576fb70760c2c73790a91ac650fac1361afbbf413cdd536862cb8ccf2e3b0b128aec47652a1a68ec7dbbe5dd14",
+        "google_id": null,
+        "email": null
+    }
+]
