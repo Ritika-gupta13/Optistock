@@ -111,6 +111,10 @@ Web Framework: Flask (lightweight and minimal web application framework)
     
 └── update.html
 
+# Link to access
+
+https://optistock-c4j8.onrender.com
+
 # Screenshots
 <img width="1600" height="864" alt="image" src="https://github.com/user-attachments/assets/91caed30-7468-42d4-95dd-c256fc6ff081" />
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/e69ee6fb-566a-42da-b042-4c27b5961613" />
