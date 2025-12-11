@@ -112,9 +112,16 @@ Web Framework: Flask (lightweight and minimal web application framework)
 # Screenshots
 <img width="1600" height="864" alt="image" src="https://github.com/user-attachments/assets/91caed30-7468-42d4-95dd-c256fc6ff081" />
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/e69ee6fb-566a-42da-b042-4c27b5961613" />
-![WhatsApp Image 2025-12-12 at 1 35 40 AM](https://github.com/user-attachments/assets/b947701b-37a6-46bb-973f-0f6d50fedb9c)
-![WhatsApp Image 2025-12-12 at 1 38 07 AM](https://github.com/user-attachments/assets/bf7d2ec6-a0d4-446a-9d36-55588312a9d2)
-![WhatsApp Image 2025-12-12 at 1 38 07 AM](https://github.com/user-attachments/assets/c38a0a94-51f6-4ddf-8dd6-4f3e373f1f0a)
+<img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/896e7339-a748-4ea5-9520-b85d5bdfba2d"/>
+<img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/2efd82fb-6460-4a6d-9218-590abc65245a"/>
+<img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/9d12d477-0502-449b-9a73-1cb6b37b48f8"/>
+
+
+
+
+
+
+
 
 
 
