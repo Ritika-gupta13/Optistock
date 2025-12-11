@@ -68,45 +68,45 @@ Web Framework: Flask (lightweight and minimal web application framework)
 
 [Project Root Folder]
 
-├── .gitignore
+  ├── .gitignore
 
-├── app.py
+  ├── app.py
 
-├── database.db
+  ├── database.db
 
-├── inventory_data.json
+  ├── inventory_data.json
 
-├── inventory_manager.py
+  ├── inventory_manager.py
 
-├── Procfile
+  ├── Procfile
 
-├── requirements.txt
+  ├── requirements.txt
 
-├── transactions_data.json
+  ├── transactions_data.json
 
-├── users_data.json
+  ├── users_data.json
 
-├── static/
+  ├── static/
 
-│   └── style.css
+  │   └── style.css
 
-└── templates/
+  └── templates/
 
-    ├── add.html
+      ├── add.html
     
-    ├── base.html
+      ├── base.html
     
-    ├── best_sellers.html
+      ├── best_sellers.html
     
-    ├── index.html
+      ├── index.html
     
-    ├── login.html
+      ├── login.html
     
-    ├── sell.html
+      ├── sell.html
     
-    ├── signup.html
+      ├── signup.html
     
-    └── update.html
+      └── update.html
 
 # Screenshots
 <img width="1600" height="864" alt="image" src="https://github.com/user-attachments/assets/91caed30-7468-42d4-95dd-c256fc6ff081" />
